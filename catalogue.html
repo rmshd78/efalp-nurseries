@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant catalogue | Efalp Nurseries</title>
+<meta name="description" content="Search 94 species of fruit trees, citrus, palms, native, shade and flowering trees, specialty crops and ornamentals available at Efalp Nurseries in Fujairah, UAE.">
+<meta name="theme-color" content="#123e2b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Efalp Nurseries">
+<meta property="og:title" content="Plant catalogue | Efalp Nurseries">
+<meta property="og:description" content="Search 94 species of fruit trees, citrus, palms, native, shade and flowering trees, specialty crops and ornamentals available at Efalp Nurseries in Fujairah, UAE.">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Prosopis_cineraria_%E2%80%9CGhaf_tree%E2%80%9D_and_new_moon_in_the_desert_of_Abu_Dhabi.jpg/500px-Prosopis_cineraria_%E2%80%9CGhaf_tree%E2%80%9D_and_new_moon_in_the_desert_of_Abu_Dhabi.jpg">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/efalp-nurseries-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Noto+Naskh+Arabic:wght@400;600&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="Efalp Nurseries home">
+      <img src="assets/img/efalp-nurseries-logo.png" alt="Efalp Nurseries logo" width="115" height="110">
+      <span class="brand__text"><span class="brand__name">Efalp Nurseries</span><span class="brand__sub">A division of Emirates Farm (EFALP)</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="nurseries.html">Nurseries</a>
+      <a href="catalogue.html" aria-current="page">Catalogue</a>
+      <a href="contact.html">Contact</a>
+      <button type="button" class="btn btn--primary btn--sm header-cta" data-download-catalogue>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+        Download catalogue
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap page-head__row">
+    <div>
+      <p class="crumbs"><a href="index.html">Home</a> / Plant catalogue</p>
+      <h1>Plant catalogue</h1>
+      <p class="lead"><span data-count="species">94</span> species from Al Raheeb and Dhadna nurseries. Search by common, botanical or Arabic name, or by variety. Stock list updated October 2026.</p>
+    </div>
+    <div class="page-head__actions">
+      <button type="button" class="btn btn--primary" data-download-catalogue><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>Download PDF catalogue</button>
+      <a class="btn btn--ghost" href="contact.html#enquiry">Send an enquiry</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap catalogue" data-catalogue>
+  <aside class="filters" aria-label="Filters">
+    <button type="button" class="btn btn--ghost btn--sm filters__close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Close filters</button>
+    <div class="filters__group">
+      <fieldset><legend>Collection</legend><div data-filter-cats></div></fieldset>
+    </div>
+    <div class="filters__group">
+      <fieldset><legend>Nursery</legend><div data-filter-nursery></div></fieldset>
+    </div>
+    <div class="filters__group">
+      <fieldset><legend>Water needs</legend><div data-filter-water></div></fieldset>
+    </div>
+    <div class="filters__group">
+      <label for="origin" style="display:block;font-weight:700;margin-bottom:8px">Origin of stock</label>
+      <select id="origin"></select>
+    </div>
+    <button type="button" class="filters__reset" data-reset>Clear all filters</button>
+  </aside>
+
+  <div>
+    <div class="toolbar">
+      <form class="search" role="search" onsubmit="return false">
+        <label for="q" class="visually-hidden">Search plants</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        <input id="q" type="search" placeholder="Search mango, Phoenix dactylifera, سدر, Alphonso..." autocomplete="off">
+        <button type="button" class="search__clear" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </form>
+      <button type="button" class="btn btn--ghost filters-toggle" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters</button>
+      <label for="sort" class="visually-hidden">Sort plants</label>
+      <select id="sort">
+        <option value="relevance">Sort: best match</option>
+        <option value="az">Name A to Z</option>
+        <option value="botanical">Botanical name</option>
+        <option value="varieties">Most varieties</option>
+      </select>
+    </div>
+    <div class="results-meta">
+      <span data-result-count aria-live="polite"></span>
+      <div class="active-filters" data-active-filters></div>
+    </div>
+    <div class="plant-grid" data-grid></div>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/efalp-nurseries-logo.png" alt="" width="60" height="57">
+        <p>Efalp Nurseries grows fruit, native, palm, flowering and specialty trees at Al Raheeb and Dhadna in Fujairah. A division of <a href="https://efalp.ae/" target="_blank" rel="noopener">Emirates Farm (EFALP)</a>.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="catalogue.html">Plant catalogue</a></li>
+          <li><a href="about.html">Company profile</a></li>
+          <li><a href="nurseries.html">Our nurseries</a></li>
+          <li><a href="contact.html">Contact and enquiries</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Nurseries</h2>
+        <ul>
+          <li><a href="nurseries.html#al-raheeb">Al Raheeb Nursery</a></li>
+          <li><a href="nurseries.html#dhadna">Dhadna Nursery</a></li>
+          <li><a href="catalogue.html?nursery=raheeb">Plants at Al Raheeb</a></li>
+          <li><a href="catalogue.html?nursery=dhadna">Plants at Dhadna</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a data-cfg="phone" href="tel:+97125856000">+971 2 585 6000</a></li>
+          <li><a data-cfg="email" href="mailto:sales@efalp.ae">sales@efalp.ae</a></li>
+          <li data-cfg="poBox">P.O. Box 29413, Abu Dhabi, United Arab Emirates</li>
+          <li><a data-cfg="facebook" data-cfg-keep href="https://www.facebook.com/Efalpae/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Emirates Farm for Livestock &amp; Agriculture Production L.L.C. All rights reserved.</span>
+      <span>Plant photos from Wikimedia Commons contributors. <a href="credits.html">See credits</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/config.js?v=3"></script>
+<script src="assets/data/plants.js?v=3"></script>
+<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/pdf.js?v=3"></script>
+<script src="assets/js/catalogue.js?v=3"></script>
+</body>
+</html>
